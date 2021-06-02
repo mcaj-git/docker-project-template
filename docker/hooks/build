@@ -2,9 +2,9 @@
 set -ex
 
 docker image build \
-    --build-arg username=al-khawarizmi \
+    --build-arg username=insecurit \
     --build-arg uid=1000 \
-    --build-arg gid=100 \
+    --build-arg gid=1000 \
     --tag "$DOCKER_REPO:latest" \
     --file Dockerfile \
     ../
