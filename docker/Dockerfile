@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="pughdr <david.pugh@kaust.edu.sa>"
+### Orignal maintainer="pughdr <david.pugh@kaust.edu.sa>"
+LABEL maintainer="mattaw6 <mattaw6@my.wgu.edu>"
 
 SHELL [ "/bin/bash", "--login", "-c" ]
 
@@ -10,7 +11,7 @@ RUN apt-get update --fix-missing && \
     rm -rf /var/lib/apt/lists/*
 
 # Create a non-root user
-ARG username=al-khawarizmi
+ARG username=insecurit
 ARG uid=1000
 ARG gid=100
 ENV USER $username
